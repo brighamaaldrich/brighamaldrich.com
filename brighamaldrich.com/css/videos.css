@@ -1,0 +1,177 @@
+:root {
+	--brig-orange: #F35B04;
+}
+
+@font-face {
+	font-family: Mont;
+	src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+	font-family: Mont, sans-serif;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+    padding: 0;
+	font-family: Mont, sans-serif;
+	font-weight: 100;
+	color: black;
+    background: white;
+}
+
+.video-cont {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+}
+
+.video-item {
+	background-color: black;
+	width: 90%;
+	height: 40vw;
+	margin-top: 15px;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.8);
+	border: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.clip-cont {
+	width: 65%;
+	height: 100%;
+	background-color: white;
+	border: solid black 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.desc-cont {
+	width: 35%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: left;
+	padding: 2vw;
+}
+
+.vid {
+	border: none;
+	width: 95.6%;
+	height: 79%;
+}
+
+.video-title, .video-info {
+	color: white;
+	width: auto;
+	margin-bottom: 1.5vw;
+}
+
+.video-title {
+	font-size: 1.6vw;
+	font-variation-settings: 'wght' 500;
+	padding-bottom: 1vw;
+	margin-bottom: 2vw;
+	margin-top: 1.5vw;
+	border-bottom: solid white 3px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: max-content;
+	text-align: center;
+}
+
+.video-info {
+	font-size: 1.2vw;
+	font-variation-settings: 'wght' 100;
+	display: flex;
+	flex-direction: row;
+}
+
+.video-info p {
+	margin: 0;
+}
+
+.pre {
+	font-variation-settings: 'wght' 600;
+	padding-right: 0.5vmax !important;
+	width: 5.5vmax;
+	text-align: right;
+	line-height: 2vmax;
+	text-transform: uppercase;
+}
+
+.info {
+	width: 75%;
+	line-height: 2vmax;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+	.video-item {
+		flex-direction: column;
+		height: auto;
+		width: 90%;
+	}
+
+	.clip-cont {
+		width: 100%;
+		height: 54.5vw;
+		padding: 1.2vmax;
+	}
+
+	.desc-cont {
+		width: 100%;
+		padding: 2vmax;
+		padding-top: 2.5vmax;
+		padding-bottom: 3vmax;
+		align-items: center;
+	}
+
+	.video-title {
+		border-bottom: solid white 1px;
+		font-size: 1.8vmax;
+		margin: 0;
+		margin-bottom: 1.5vmax;
+		transform: none;
+		width: initial;
+	}
+
+	.video-info {
+		font-size: 1.5vmax;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		margin-bottom: 1.5vmax;
+	}
+
+	.pre {
+		margin: 0;
+		padding: 0;
+		width: auto;
+		margin-bottom: 0.5vmax !important;
+		letter-spacing: 0.1vmax;
+	}
+
+	.pre, .info {
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.vid {
+		height: 94%;
+	}
+}

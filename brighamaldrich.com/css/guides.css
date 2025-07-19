@@ -1,0 +1,167 @@
+:root {
+	--brig-orange: #F35B04;
+}
+
+@font-face {
+	font-family: Mont;
+	src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+	font-family: Mont, sans-serif;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Mont, sans-serif;
+	font-weight: 100;
+	color: black;
+	background: white;
+}
+
+.document {
+    margin-top: 115px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw;
+    border: solid #bebcbc 0.2px;
+}
+
+.doc-title {
+    width: 85%;
+    font-size: 3.9vmax;
+    font-variation-settings: 'wght' 400;
+    line-height: 5.2vmax;
+}
+
+.author {
+    width: 85%;
+    text-align: left;
+    color: #c0c0c0;
+    font-variation-settings: 'wght' 400;
+    font-size: 1.4vmax;
+	line-height: 3.2vmax;
+    margin-bottom: 0;
+}
+
+.bar {
+    margin-left: 1.5vmax;
+    margin-right: 1.5vmax;
+}
+
+.intro {
+    width: 85%;
+    font-size: 1.0vmax;
+	color: black;
+	line-height: 2.4vmax;
+	font-variation-settings: 'wght' 450;
+}
+
+.map {
+    border: none;
+    width: 80%;
+    height: 32vmax;
+    margin-top: 2vmax;
+    margin-bottom: 3vmax;
+}
+
+.sather {
+    border-top: solid #bebcbc 0.2px;
+}
+
+.location {
+    padding: 2vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    border-bottom: solid #bebcbc 0.2px;
+}
+
+.loc-title {
+    font-size: 2.2vmax;
+    font-variation-settings: 'wght' 500;
+    margin-left: -3vw;
+}
+
+.desc, .hours, .photos {
+    font-size: 1.0vmax;
+	color: black;
+	line-height: 2.4vmax;
+	font-variation-settings: 'wght' 450;
+}
+
+.bold {
+    font-variation-settings: 'wght' 700;
+    color: black;
+}
+
+.red {
+    color: rgb(196, 19, 13);
+}
+
+.orange {
+    color: rgb(222, 132, 15);
+}
+
+.yellow {
+    color: rgb(241, 205, 0);
+}
+
+.green {
+    color: rgb(16, 140, 0);
+}
+
+
+.example-photos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7vmax;
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
+}
+
+.v {
+    width: 100%;
+}
+
+.h {
+    width: calc(200% + 0.7vmax);
+    grid-column: 1 / 2;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    .intro, .loc, .busy, .desc, .hours, .photos {
+        font-size: 1.4vmax;
+	    line-height: 3.4vmax;
+    }
+
+    .document {
+        width: 95%;
+    }
+
+    .location {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .doc-title, .intro {
+        width: 95%;
+    }
+
+    .map {
+        width: 90%;
+    }
+}

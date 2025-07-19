@@ -1,0 +1,252 @@
+:root {
+	--brig-orange: #F35B04;
+}
+
+.navbar {
+    height: 100px;
+    background: black;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    letter-spacing: .1rem;
+    color: white;
+    z-index: 10;
+}
+
+.options-left, .options-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    flex: 1;
+}
+
+.options-left {
+    padding-left: 20px;
+}
+
+.options-right {
+    padding-right: 20px;
+}
+
+.option {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: #333 20px;
+    cursor: pointer;
+	width: 25%;
+	font-size: 1.1vw;
+	text-decoration: none;
+    flex: 1;
+    color: white;
+    font-variation-settings: 'wght' 200;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.option:hover {
+    color: var(--brig-orange);
+}
+
+.header {
+    flex: 1.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.name h1 {
+    font-weight: 400;
+    font-size: 1.6vw;
+    line-height: 0;
+    letter-spacing: 0.25rem !important;
+}
+
+.job h2 {
+    font-weight: 100;
+    font-size: 0.9vw;
+    line-height: 0;
+    font-variation-settings: 'wght' 200;
+}
+
+.ham {
+    visibility: hidden;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    font-size: 1.5rem;
+    line-height: 0;
+    color: white;
+}
+
+.ham:hover {
+    color: var(--brig-orange);
+}
+
+.menu-shade {
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    z-index: 1000 !important;
+}
+
+.menu {
+    width: 250px;
+    height: 100%;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cross {
+    position: fixed;
+    left: 220px;
+    top: 12px;
+    font-size: 20px;
+}
+
+.menu-option {
+    font-size: 20px;
+    font-variation-settings: 'wght' 350;
+    text-align: center;
+    line-height: 30px;
+    width: 80%;
+}
+
+.menu-option, .cross {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-option:hover, .cross:hover {
+    color: var(--brig-orange);
+}
+
+
+
+
+.smallfoot {
+    width: 70%;
+    left: 15%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    z-index: 9;
+    bottom: 0.5vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transition: 0.5s;
+}
+
+.contact-item {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+}
+
+.contact-item:hover {
+    color: var(--brig-orange);
+}
+
+.rand-icon {
+    margin: 0;
+    font-size: 1.1vmax;
+    margin-right: 0.6vmax;
+}
+
+.delete_foot {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+
+.dropdown {
+	opacity: 0;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    /* text-align: left; */
+	transition: 0.1s linear;
+	position: fixed;
+    margin: 0;
+	right: 12px;
+	top: 100px;
+	padding: 25px;
+    height: max-content;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 40px;
+}
+
+.has-dropdown:hover .option {
+    color: var(--brig-orange);
+}
+
+.dropdown-option {
+    color: black;
+    font-size: 1.1vw;
+    font-variation-settings: 'wght' 350;
+    text-decoration: none;
+}
+
+.dropdown-option:hover {
+    color: var(--brig-orange);
+}
+
+.has-dropdown:hover .dropdown {
+	width: 10vw !important;
+	opacity: 1;
+    display: flex;
+}
+
+.dropdown li {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    list-style-type: none;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .options-left, .options-right {
+        display: none;
+    }
+
+    .name h1 {
+        font-size: 1rem;
+    }
+
+    .job h2 {
+        font-size: 0.6rem;
+    }
+
+    .ham {
+        visibility: visible;
+    }
+}

@@ -1,0 +1,143 @@
+:root {
+	--brig-orange: #f35b04;
+}
+
+@font-face {
+	font-family: Mont;
+	src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+	box-sizing: border-box;
+	font-family: Mont, sans-serif;
+}
+
+body,
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Mont, sans-serif;
+	font-weight: 100;
+	color: black;
+	background: white;
+}
+
+.outer {
+	width: 70%;
+	background-color: black;
+	box-shadow: 0px 0px 30px rgba(20, 20, 20, 0.7);
+	margin-top: 115px;
+	margin-left: 50%;
+	transform: translate(-50%, 0%);
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+	height: 83vh;
+	height: min-content;
+	margin-bottom: 30px;
+}
+
+.personal-info {
+	flex: 1;
+	background-color: black;
+	height: 100% !important;
+	padding: 3vmax;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about-me {
+	flex: 4;
+	padding: 4.5vmax;
+	padding-top: 2.8vmax;
+	background-color: white;
+	border: solid black 4px;
+	border-left: 5px;
+}
+
+.about-me h1 {
+	color: black;
+	padding: 0;
+	margin: 0 0 70px 0;
+	text-align: center;
+	font-variation-settings: "wght" 500;
+	font-size: 2.5vmax;
+	margin-bottom: 1.75vmax;
+}
+
+.my-info {
+	font-size: 1.2vmax;
+	font-variation-settings: "wght" 270;
+	color: #666;
+	line-height: 2.3vmax;
+}
+
+.headshot {
+	width: 100%;
+	border-radius: 1000px;
+	margin-bottom: 2vmax;
+}
+
+.my-deets {
+	color: white;
+	font-variation-settings: "wght" 400;
+	font-size: 1.4vmax;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 3vmax;
+}
+
+.my-deets a {
+	text-decoration: none !important;
+}
+
+#resume {
+	color: var(--brig-orange);
+}
+
+#resume:hover {
+	color: white;
+}
+
+#resume-link {
+	text-decoration: none !important;
+}
+
+@media (max-width: 1024px) {
+	.contact-item p {
+		font-size: 2.5vw;
+	}
+
+	.outer {
+		flex-direction: column-reverse;
+		width: 90%;
+		height: auto;
+	}
+
+	.personal-info {
+		height: min-content;
+		flex: initial;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.headshot {
+		width: 20%;
+		margin: 0;
+		margin-right: 2vmax;
+	}
+
+	.my-deets {
+		font-size: 1.1vmax;
+		padding: 1vmax;
+		margin: 0;
+	}
+
+	.about-me {
+		flex: initial;
+		border: solid black 2px;
+	}
+}

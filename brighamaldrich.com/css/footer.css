@@ -1,0 +1,70 @@
+:root {
+	--brig-orange: #F35B04;
+}
+
+.toe {
+    height: 25vmax;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+    margin-top: 15px;
+}
+
+.left-foot, .right-foot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left-foot {
+    font-size: 1.1vmax;
+}
+
+.foot-option {
+    font-size: 1.1vmax;
+    color: white;
+    text-decoration: none;
+    line-height: 3.4vmax;
+    letter-spacing: 0.1vw;
+    font-variation-settings: 'wght' 300;
+}
+
+.foot-option:hover {
+    color: var(--brig-orange);
+}
+
+.right-foot {
+    line-height: 1.25vmax;
+}
+
+.right-foot h1 {
+    font-size: 1.6vmax;
+    color: white;
+    text-align: left;
+    font-variation-settings: 'wght' 600;
+}
+
+.foot-contact-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    justify-content: left;
+    font-size: 1.1vmax;
+    font-variation-settings: 'wght' 300;
+}
+
+.foot-contact-item:hover {
+    color: var(--brig-orange);
+}
+
+.foot-contact-item p {
+    margin-left: 5px;
+}

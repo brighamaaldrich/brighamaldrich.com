@@ -1,0 +1,137 @@
+:root {
+	--brig-orange: #f35b04;
+}
+
+@font-face {
+	font-family: Mont;
+	src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+	box-sizing: border-box;
+	font-family: Mont, sans-serif;
+}
+
+body,
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Mont, sans-serif;
+	font-weight: 100;
+	color: black;
+	background: white;
+}
+
+.categories {
+	padding-right: 8.4%;
+	padding-left: 8.4%;
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 0.8vmax;
+	row-gap: 0.8vmax;
+	margin-top: 115px;
+	height: auto;
+}
+
+.cat {
+	width: 100%;
+	position: relative;
+	height: auto;
+	overflow: hidden;
+}
+
+.cat h1 {
+	font-size: 1.5vw;
+	font-weight: 600;
+	position: absolute;
+	color: white;
+	top: 36.3vw;
+	margin-left: 1.5vw;
+	z-index: 3;
+	transition: 0.3s;
+}
+
+.thumb {
+	width: 100%;
+	position: relative;
+	display: block;
+	z-index: 1;
+}
+
+.shade {
+	margin-top: 120%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 0.8),
+		rgba(0, 0, 0, 0.8) 85%,
+		rgba(0, 0, 0, 0.4) 92%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	top: 0;
+	height: 120%;
+	transition: 0.3s;
+}
+
+.cat:hover > .shade {
+	margin-top: -30%;
+}
+
+.cat:hover > h1 {
+	top: 0.2vw;
+}
+
+.desc {
+	color: rgba(255, 255, 255, 0);
+	font-size: 1.5vmax;
+	margin-left: 15%;
+	margin-right: 15%;
+	transition: 0.3s;
+	position: absolute;
+	z-index: 3;
+	top: 100%;
+	text-align: center;
+}
+
+.cat:hover > .desc {
+	color: rgba(255, 255, 255, 1);
+	top: 47%;
+	transform: translateY(-50%);
+}
+
+i {
+	transition: 0.3s;
+}
+
+.cat:hover i {
+	rotate: 90deg;
+}
+
+@media (max-width: 1024px) {
+	.categories {
+		padding-left: 4%;
+		padding-right: 4%;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.cat h1 {
+		top: 60vw;
+		font-size: 2.8vw;
+		margin-left: 2vw;
+	}
+}
+
+@media (max-width: 1325px) {
+	.contact-item p {
+		display: none;
+	}
+
+	.rand-icon {
+		font-size: 1.5vmax !important;
+	}
+}
